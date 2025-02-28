@@ -1,0 +1,129 @@
+1. Conceptos básicos de estructuras de datos
+  Estructuras de datos: Conjunto de datos organizados de manera que permitan un acceso y modificación eficiente.
+  Operaciones comunes: Inserción, eliminación, búsqueda, actualización, recorrido, y ordenación de datos.
+2. Tipos de estructuras de datos lineales
+  Estas estructuras almacenan datos secuencialmente, uno detrás del otro.
+  Arreglos o Arrays:
+    Definición: Conjunto de elementos de tamaño fijo del mismo tipo.
+    Operaciones: Acceso directo mediante índice, recorrido, inserción, eliminación.
+  Listas enlazadas (Linked Lists):
+    Definición: Secuencia de nodos, donde cada nodo almacena datos y una referencia al siguiente nodo.
+  Tipos:
+    Lista enlazada simple: Un solo puntero al siguiente nodo.
+    Lista doblemente enlazada: Punteros al nodo anterior y al siguiente.
+    Lista circular: El último nodo apunta al primero.
+  Operaciones: Inserción, eliminación, recorrido.
+  Pilas (Stacks):
+    Definición: Estructura LIFO (Last In, First Out). Solo se accede al último elemento insertado.
+      Operaciones:
+      Push: Insertar un elemento.
+      Pop: Eliminar el último elemento.
+      Peek: Obtener el valor del último elemento sin eliminarlo.
+    Colas (Queues):
+  Definición: Estructura FIFO (First In, First Out). El primer elemento en entrar es el primero en salir.
+    Operaciones:
+    Enqueue: Insertar un elemento.
+    Dequeue: Eliminar el primer elemento.
+    Tipos:
+    Cola simple.
+  Cola doble (Deque): Permite insertar y eliminar desde ambos extremos.
+  
+  3. Estructuras de datos no lineales
+  Estas estructuras permiten almacenar datos de manera jerárquica o relacional.
+  Árboles (Trees):
+    Definición: Estructura jerárquica con un nodo raíz y nodos hijos.
+  Terminología:
+    Raíz: El nodo principal.
+    Nodo hoja: Nodo sin hijos.
+  Altura: La longitud del camino más largo desde la raíz hasta una hoja.
+  Tipos de árboles:
+    Árbol binario: Cada nodo tiene como máximo dos hijos.
+    Árbol binario de búsqueda (Binary Search Tree): Árbol binario donde el hijo izquierdo es menor que el nodo y el hijo derecho es mayor.
+    Árbol AVL: Árbol binario de búsqueda balanceado.
+    Árbol B: Árbol auto-balanceado que almacena datos de manera ordenada para búsquedas rápidas.
+    Operaciones: Inserción, eliminación, búsqueda, recorridos (preorden, inorden, postorden).
+  Montículos (Heaps):
+  
+  Definición: Árbol binario completo donde el valor de cada nodo es mayor o menor que el de sus hijos.
+  Tipos:
+    Montículo máximo (Max Heap): El valor del nodo padre es mayor o igual al de sus hijos.
+    Montículo mínimo (Min Heap): El valor del nodo padre es menor o igual al de sus hijos.
+    Usos: Implementación de colas de prioridad.
+    Grafos (Graphs):
+  
+  Definición: Conjunto de nodos (vértices) conectados por aristas (edges).
+  Tipos de grafos:
+    Dirigidos y no dirigidos: En los grafos dirigidos, las aristas tienen dirección.
+    Ponderados: Las aristas tienen un valor asociado (peso).
+    Grafos conexos y no conexos: Un grafo conexo tiene un camino entre todos sus nodos.
+    Grafos cíclicos y acíclicos: Los cíclicos tienen ciclos, los acíclicos no.
+    Representación:
+      Matriz de adyacencia: Matriz que indica la existencia de aristas entre los nodos.
+      Lista de adyacencia: Para cada nodo, se almacena una lista de los nodos con los que tiene conexión.
+    Algoritmos de grafos:
+      Búsqueda en anchura (BFS).
+      Búsqueda en profundidad (DFS).
+      Algoritmo de Dijkstra (camino más corto en grafos ponderados).
+      Algoritmo de Kruskal y algoritmo de Prim (árbol de expansión mínima).
+
+4. Otras estructuras de datos importantes
+  Tablas hash (Hash Tables):
+  Definición: Estructura que asocia claves con valores mediante una función hash.
+  Operaciones: Inserción, búsqueda, eliminación.
+  Colisiones: Se resuelven con técnicas como encadenamiento o sondeo lineal.
+  Tries (Árboles de prefijos):
+  Definición: Árbol especializado para almacenar cadenas de caracteres.
+  Usos: Búsqueda rápida de palabras, autocompletado.
+5. Algoritmos importantes
+  Ordenamiento:
+  Bubble Sort, Merge Sort, Quick Sort, Insertion Sort, etc.
+  Búsqueda:
+  Búsqueda lineal.
+  Búsqueda binaria.
+  Recorridos:
+  Preorden, inorden, postorden para árboles.
+  BFS y DFS para grafos.
+6. Complejidad temporal y espacial
+  Notación Big O: Comprender cómo analizar la eficiencia de las operaciones en las estructuras de datos.
+  O(1): Tiempo constante.
+O(n): Tiempo lineal.
+O(log n): Tiempo logarítmico.
+Herramientas y recursos para la práctica:
+Lenguajes de programación: C, C++, Python, Java (todos tienen soporte robusto para implementar estas estructuras).
+Ejercicios en plataformas: LeetCode, HackerRank, Codeforces.
+
+
+
+
+
+
+En inglés:
+"Algorithms with Go" - Jonathan Chaffer
+
+Este libro se enfoca en la implementación de algoritmos y estructuras de datos en Go. Cubre temas como listas enlazadas, pilas, colas, árboles y grafos, y los implementa paso a paso en Go, lo que te permitirá entender cómo funciona cada estructura y cómo se puede utilizar en la programación.
+
+Enlace: Puedes encontrar este libro en sitios como Amazon o Packt Publishing.
+
+"Mastering Go: Create Golang production applications using network libraries, concurrency, and advanced Go data structures" - Mihalis Tsoukalos
+
+Este libro no solo cubre los conceptos avanzados de Go, sino que también profundiza en estructuras de datos como listas, pilas y colas, así como en cómo aprovechar la concurrencia en Go para algoritmos más complejos.
+
+Ediciones: Actualmente está disponible en su tercera edición.
+
+"Data Structures and Algorithms in Go" - Shubhangi Agarwal
+
+Este libro cubre los fundamentos de estructuras de datos y algoritmos específicamente para Go. Trata temas como ordenación, búsqueda, árboles y grafos, todo con ejemplos en Go. Está pensado para aquellos que ya tienen una base en programación y quieren entender cómo se implementan estas estructuras en Go.
+"Learning Go: An Idiomatic Approach to Real-World Go Programming" - Jon Bodner
+
+Aunque no es exclusivamente un libro de estructuras de datos, ofrece una excelente cobertura de Go en el mundo real, con algunas menciones de algoritmos y estructuras de datos, además de ejemplos prácticos.
+En español:
+Aunque la mayoría de los libros específicos sobre estructuras de datos en Go están en inglés, puedes encontrar algunos recursos en línea en español. Aquí te dejo algunas opciones:
+
+"Estructuras de Datos y Algoritmos en Go" (Recursos en línea)
+Muchos blogs, tutoriales y sitios web en español cubren estructuras de datos y algoritmos en Go. Puedes buscar términos como "estructuras de datos en Go" o "algoritmos en Go" y encontrarás muchos ejemplos prácticos.
+"Mastering Algorithms with Go" (en español aún no está disponible)
+A veces, los libros de Go en inglés como los que mencioné antes también se traducen al español, por lo que podrías estar atento a ediciones en español.
+
+
+
+
